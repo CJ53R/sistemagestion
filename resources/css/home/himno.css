@@ -1,0 +1,57 @@
+.tuition .himno-text{
+    font-weight: 600;
+}
+.tuition .himno-text span{
+    width: 100%;
+    cursor: pointer;
+    position:relative;
+    display:block;
+}
+
+.tuition .himno-text span:hover{
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 18px;
+}
+.tuition .himno-autor{
+    text-align: end;
+}
+.tuition .himno-autor span{
+    font-size: 11px;
+    position:relative;
+    display:block;
+    font-style: italic;
+}
+
+.tuition .card{
+    border-color: var(--primary);
+    border-width: 2px 2px 2px;
+    border-style: dotted dotted dotted;
+    border-radius: 50px;
+}
+.tuition audio{
+    margin-top: 10px;
+    width: 40%;
+}
+
+@media  (max-width: 991px) {
+    .tuition .himno-text span{
+        font-size: 12px;
+    }
+    .tuition .himno-text span:hover{
+        font-size: 13px;
+    }
+    .tuition .himno-autor span{
+        font-size: 9px;
+    }
+    
+    .tuition h4{
+        font-size: 18px;
+    }
+    .tuition .card-subtitle{
+        font-size: 14px;
+    }
+    .tuition audio{
+        width: 70%;
+    }
+}

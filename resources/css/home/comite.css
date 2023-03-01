@@ -1,0 +1,137 @@
+#contenedor-portada {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+}
+#portada-text{
+    text-align: center;
+    padding: 150px 0px;
+}
+
+.title-portada{
+    font-weight: bold;
+}
+.contenedor-text{
+    margin-top: 20px;
+    border-color: var(--secondary) var(--secondary) var(--secondary);
+  border-width: 2px 2px 2px;
+  border-style: dotted dotted dotted;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contenedor-text h4{
+ color: var(--primary);
+ font-size: 20px;
+ animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.contenedor-text p{
+    text-align: justify;
+    font-weight: 500;
+}
+
+.contenedor-text .separador{
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: var(--primary);
+}
+
+.contenedor-text p:hover{
+    color: var(--primary);
+    font-weight: 600;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 10%;
+      width: 120%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+  .carousel-item{
+    filter: grayscale(0%);
+    border-radius:10%;
+    -webkit-border-radius:10%;
+  }
+  .carousel-inner{
+    border-radius:10px;
+    border: 2px solid var(--primary);
+    -webkit-border-radius:10px;
+  }
+  
+  .carousel .carousel-indicators .btnpasarela {
+      background-color: var(--secondary);
+      
+  }
+  
+  .carousel .carousel-indicators .btnpasarela.active {
+      background-color: var(--primary);
+      
+  }
+  
+  
+  .carousel .btnpasarela{
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+  }
+  
+  .carousel .btnpasarela:hover{
+      background-color: var(--primary);
+  }
+  
+  .carousel button i{
+      font-size: 40px;
+      color: var(--primary);
+  }
+  .carousel button{
+      opacity: 0;
+  }
+  .carousel button:hover{
+      opacity: 1;
+  }
+  
+  @media (MAX-width: 991px) {
+      .carousel-indicators {
+          display: none;
+      }
+      .carousel button i{
+          font-size: 25px;
+      }
+      #portada-text{
+        padding: 100px 0px;
+    }
+    .contenedor-text h4{
+        font-size: 16px;
+       }
+    .contenedor-text p{
+        font-size: 13px;
+    }
+    .title-portada{
+        font-size: 20px;
+    }
+    .seguir{
+        font-size: 13px;
+    }
+    }
+
+    @media (MAX-width: 300px) {
+        #portada-text{
+          padding: 30px 0px;
+      }
+      }
+
+      @media (Min-width: 1670px) {
+        #portada-text{
+          padding: 200px 0px;
+      }
+      }

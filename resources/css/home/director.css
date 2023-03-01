@@ -1,0 +1,161 @@
+
+.t-principal{
+    color: var(--primary);
+    animation-duration: 3s;
+    animation-name: slidein;
+    margin-bottom: 20px;
+}
+.contenedor-title{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contenedor-title span{
+    position:relative;
+    display:block;
+    font-weight: bold;
+    color: var(--primary);
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.contenedor-title .cargo{
+    font-size: 16px;
+}
+
+.contenedor-title .name{
+    font-size: 20px;
+}
+
+.contenedor-title .nivel{
+    font-size: 12px;
+}
+
+.contenedor-img{ 
+    width: 100%;
+    justify-content: center;
+}
+
+.contenedor-img img{ 
+    background-size: cover;
+    width: 60%;
+    height: 100%;
+    border-radius: 40px;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+.det-hover{
+    width: 0%;
+    height: auto;
+    background-color: rgba(56, 53,53, 0.568);
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-text{
+    margin-top: 20px;
+    border-color: var(--secondary) var(--secondary) var(--secondary);
+  border-width: 2px 2px 2px;
+  border-style: dotted dotted dotted;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contenedor-text h4{
+ color: var(--primary);
+ font-size: 20px;
+ animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.contenedor-text p{
+    text-align: justify;
+    font-weight: 500;
+}
+
+.contenedor-text .separador{
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: var(--primary);
+}
+
+.contenedor-text p:hover{
+    color: var(--primary);
+    font-weight: 600;
+}
+
+
+  
+  @keyframes slidein {
+    from {
+      margin-left: 10%;
+      width: 120%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+  @media  (max-width: 991px) {
+    .t-principal{
+        font-size: 18px;
+    }
+    .contenedor-title{
+        margin-bottom: 10px;
+    }
+    
+    .contenedor-title .cargo{
+        font-size: 12px;
+    }
+    
+    .contenedor-title .name{
+        font-size: 16px;
+    }
+    
+    .contenedor-title .nivel{
+        font-size: 10px;
+    }
+    .contenedor-text h4{
+        font-size: 16px;
+       }
+    .contenedor-text p{
+        font-size: 13px;
+    }
+    .contenedor-img img{
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+.modal-img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0,0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+.modal-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.modal-img img{
+    width: 90%;
+    max-width: 600px;
+}

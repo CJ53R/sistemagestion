@@ -1,0 +1,115 @@
+
+  .fifth:hover{
+    outline: 0;
+  }
+
+  .fifth::before, .fifth::after, .fifth:focus {
+    border: none;
+    color: var(--light);
+    background: var(--primary);
+  }
+
+
+
+  .fifth {
+    margin-top: 20px;
+    border: 2px solid var(--primary);
+    border-radius: 0.6em;
+    color: var(--primary);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 400ms ease-in-out;
+    transition: color 400ms ease-in-out;
+    width: 100%;
+    padding: 15px 0px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .fifth:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: var(--primary);
+    z-index: -1;
+    -webkit-transition: width 400ms ease-in-out;
+    transition: width 400ms ease-in-out;
+  }
+  .fifth:hover {
+    color: #fff;
+  }
+  .fifth:hover:after {
+    width: 100%;
+  }
+
+
+
+
+  .cont-info{
+    margin-top: 10px;
+    padding: 10px 40px;
+    width: 90%;
+     border: 3px solid var(--primary); 
+     -webkit-transform: skew(-10deg);
+     -moz-transform: skew(-10deg);
+     -ms-transform: skew(-10deg);
+     -o-transform: skew(-10deg);
+     transform: skew(-10deg);
+     border-top-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     text-align: justify;
+     transition: 0.8s all;
+  }
+
+  .cont-info .informacion{
+    -webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+
+
+
+
+
+
+  @media  (max-width: 991px) {
+
+  .fifth {
+    font-size: 14px;
+  }
+
+  .cont-info{
+    font-size: 12px;
+    padding: 10px 15px;
+     -webkit-transform: skew(0deg);
+     -moz-transform: skew(0deg);
+     -ms-transform: skew(0deg);
+     -o-transform: skew(0deg);
+     transform: skew(0deg);
+  }
+
+  .cont-info .informacion{
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    -o-transform: skew(0deg);
+    transform: skew(0deg);
+  }
+
+
+
+
+
+  }
+
+
+
+

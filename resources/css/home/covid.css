@@ -1,0 +1,116 @@
+.title-pag{
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--primary);
+}
+.cont-paso{
+    border-radius: 10px;
+    background: url('../../img/fondo.jpg');
+    box-shadow: 3px 3px var(--secondary),-0.1em 0 0.4em var(--secondary);
+}
+.paso{
+    width: 100%;
+    text-align: center;
+    color: var(--light);
+}
+.paso .num{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.paso .det{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.img-paso{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.img-paso img{
+    background-size: cover;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 3px 3px var(--secondary),-0.1em 0 0.4em var(--secondary);
+    transition: 0.5s all;
+}
+
+.img-paso img:hover{
+    -webkit-transform:scale(1.2);transform:scale(1.05);
+}
+
+.more-info{
+    text-align: justify;
+    padding-left: 15PX;
+    padding-right: 15PX;
+    padding-bottom: 20px;
+    font-weight: 600;
+    margin: 5px;
+    border-radius: 5px;
+    color: var(--light);
+}
+
+.cont-paso button{
+    border: none;
+    background: transparent;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.cont-paso button:hover{
+    color: var(--light);
+}
+
+.ctnb{
+    padding: 60px 0px;
+}
+.btn-pdf{
+    text-decoration: none;
+    background: var(--primary);
+    color: var(--light);
+    padding: 20px 100px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.btn-pdf:hover{
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+@media  (max-width: 992px) {
+    .title-pag{
+        font-size: 24px;
+    }
+    .paso .num{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .paso .det{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    
+    .more-info{
+        padding-bottom: 12px;
+        font-size: 12px;
+    }
+    
+    .cont-paso button{
+        font-size: 12px;
+    }
+    
+    .ctnb{
+        padding: 30px 0px;
+    }
+    .btn-pdf{
+        padding: 10px 50px;
+        font-size: 12px;
+    }
+    }

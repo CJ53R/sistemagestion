@@ -1,0 +1,207 @@
+/*******************************/
+/********* Form CSS **********/
+/*******************************/
+/*REPOSO*/
+.contdiv{
+    margin-bottom: 5px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  .contdiv  .error_input{
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    display: none;
+    color: var(--red);
+  }
+  .contdiv  .error_input_activo{
+    display: block;
+  }
+  .contdiv  .validacion_estado {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    font-size: 16px;
+    background-color: var(--light);
+    opacity: 0;
+  }
+  .contdiv_correcto label.focus{
+    border-color: var(--yel);
+  }
+  .contdiv_correcto  .validacion_estado {
+    color: var(--yel);
+    padding-left: 3px;
+    opacity: 1;
+  }
+  .contdiv_incorrecto label.focus{
+    border-color: var(--red);
+  }
+  .contdiv_incorrecto  .validacion_estado {
+    color: var(--red);
+    padding-left: 3px;
+    opacity: 1;
+  }
+  .contdiv_correcto textarea.focus{
+    border-color: var(--yel);
+  }
+  .contdiv_incorrecto textarea.focus{
+    border-color: var(--red);
+  }
+  span, input{
+    font: 16px 'Quicksand';
+    padding: 0;
+  }
+  .contdiv label{
+    display: block;
+    width: 100%;
+    border: 2px solid silver;
+    padding: 8px 10px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: .25s;
+    cursor: pointer;
+  }
+  .contdiv  label input{
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    color: transparent;
+  }
+
+  .contdiv  label textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    color: transparent;
+  }
+
+
+  .contdivcodigo label{
+    display: block;
+    width: 100%;
+    border: 2px solid silver;
+    padding: 8px 10px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: .25s;
+    cursor: pointer;
+  }
+  .contdivcodigo  label input{
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    color: transparent;
+  }
+  .labelcombo{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid silver;
+    padding: 8px 10px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: .25s;
+    cursor: pointer;
+  }
+  label select{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+  }
+  label select option{
+    background-color: var(--grey);
+    font-weight: bold;
+    padding-top: 500px;
+    margin-top: 50px;
+  }
+  label span{
+    color: silver;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transition: .25s;
+  }
+  /*FOCUS*/
+  label.focus{
+    border-color: var(--primary);
+  }
+  label span.focus{
+    font-weight: bold;
+    color: var(--primary);
+  }
+  label input.focus{
+    color: var(--primary);
+  }
+  label textarea.focus{
+    color: var(--primary);
+  }
+  /*TOP*/
+  label span.top{
+    left: 2px;
+    top: -10px;
+    font-size: 12px;
+    background: white;
+    padding: 0 5px;
+  }
+  
+  .contdivcodigo{
+    margin-bottom: 5px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  .contdivcodigo label{
+    border-color: var(--yel);
+  }
+  .contdivcodigo label span{
+    font-weight: bold;
+    color: var(--primary);
+  }
+  .contdivcodigo label span{
+    left: 2px;
+    top: -10px;
+    font-size: 12px;
+    background: white;
+    padding: 0 5px;
+  }
+  .contdivcodigo .validacion_estado {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    font-size: 16px;
+    color: var(--yel);
+  }
+  
+  /* mostrar el calendario al hacer click */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+     

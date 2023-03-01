@@ -1,0 +1,17 @@
+.content-horario{
+    height:100px;
+    width:100%;
+     text-align:center;
+    background-color:blue;
+}
+.horario {
+    width:50%;
+     margin:0px auto;
+    background-color:red;
+}
+.horario .title{
+ font-size: 16px;
+ color: yellow;
+ margin: 15px;
+ font-weight: bold;
+}

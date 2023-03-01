@@ -1,0 +1,54 @@
+/* *********************************BOTONES*******************************/
+
+.botondelete{
+	transition: .4s ease-in-out all;
+    margin: 4px;
+    padding: 7px;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    background-color: #ff0800;
+    box-shadow: inset 0 0 0 0 #FDBE33;
+    border: none;
+    border-radius:5px;
+}
+
+.botondelete:hover{
+    color: #20212B;
+    box-shadow: inset 0 0 0 30px #FDBE33;
+}
+
+.botonupdate{
+	transition: .4s ease-in-out all;
+    margin: 4px;
+    padding: 7px;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    background-color: #f57e39;
+    box-shadow: inset 0 0 0 0 #FDBE33;
+    border: none;
+    border-radius:5px;
+}
+
+.botonupdate:hover{
+    color: #20212B;
+    box-shadow: inset 0 0 0 30px #FDBE33;
+}
+.botonshow{
+	transition: .4s ease-in-out all;
+    margin: 4px;
+    padding: 7px;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    background-color: #39ac4c;
+    box-shadow: inset 0 0 0 0 #FDBE33;
+    border: none;
+    border-radius:5px;
+}
+
+.botonshow:hover{
+    color: #20212B;
+    box-shadow: inset 0 0 0 30px #FDBE33;
+}

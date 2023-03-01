@@ -1,0 +1,38 @@
+.cont-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cont-img img{
+    background-size: cover;
+        width: 100%;
+        height: 100%;
+}
+
+.cont-img img:hover{
+    filter: opacity(.5);
+}
+
+.cont-info{
+    width: 100%;
+    background: var(--primary);
+    padding: 10px 20px;
+}
+
+.cont-info a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--light);
+}
+
+.cont-info a:hover{
+    text-decoration: underline 2px;
+    color: var(--secondary);
+}
+.tit h3{
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 20px;
+}

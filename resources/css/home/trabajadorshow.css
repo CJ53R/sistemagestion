@@ -1,0 +1,141 @@
+.tuition  .separator{
+    color: var(--primary);
+  }
+  .tuition .button{
+      position: relative;
+      
+      position: relative;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      outline: none;
+      font-size: 18px;
+      margin: 1em 0.8em;
+      color: var(--primary);
+      width: 120px;
+      border-radius: 5px;
+      padding: 4px;
+    }
+    .tuition .button i{
+      width: 100%;
+      display: none;
+    }
+  
+    .tuition .button.active{
+      border-bottom: 2px solid var(--yel);
+      border-top: 2px solid var(--yel);
+    }
+  
+    .tuition .button.active i{
+      transform: rotate(200grad);
+      display: block;
+    }
+    
+    
+        
+        [data-content] {
+            display: none;
+        }
+        
+        .active[data-content] {
+            display: block;
+        }
+    
+        .active[data-target] {
+            color: var(--yel);
+        }
+
+  
+        .tuition .docente-image{
+          width: 150px;
+          height: 185px;
+          border-radius: 5px;
+          border: 8px solid var(--secondary);
+          justify-content: center;
+          align-items: center;
+          background: var(--secondary);
+      }
+
+      .tuition .imagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+      }
+      .tuition .docente-image img{
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .tuition .docente-detalle{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .tuition .docente-detalle span{
+        width: 100%;
+        display:block;
+    }
+    .tuition .docente-detalle .nombre{
+        font-weight: 800;
+        color: var(--primary);
+    }
+    .tuition .docente-detalle .gseccciones{
+        font-weight: 600;
+        color: var(--primary);
+    }
+
+    .tuition .btnmore i{
+        font-size: 25px;
+        color: var(--primary);
+    }
+
+    .tuition .btnclose i{
+        font-size: 25px;
+        color: var(--red);
+    }
+
+
+    .tuition .more-info{
+        width: 100%;
+    }
+    .tuition .more-info span{
+        width: 100%;
+        display:block;
+        font-weight: 600;
+        color: var(--primary);
+        font-size: 15px;
+    }
+    .tuition .btn-cont button{
+        border: none;
+        background: transparent;
+    }
+    @media  (max-width: 991px) {
+          .tuition .button{
+              font-size: 14px;
+              margin: 1em 0.8em;
+              width: 80px;
+              padding: 2px;
+            }
+            .tuition .docente-detalle .nombre{
+                font-size: 14px;
+            }
+            .tuition .docente-detalle .gseccciones{
+                font-size: 13px;
+            }
+        
+            .tuition .btnmore i{
+                font-size: 20px;
+            }
+        
+            .tuition .btnclose i{
+                font-size: 20px;
+            }
+            .tuition .more-info span{
+                font-size: 13px;
+            }
+            .tuition .title{
+                font-size: 18px;
+            }
+    }
